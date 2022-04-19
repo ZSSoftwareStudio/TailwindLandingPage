@@ -13,8 +13,10 @@
 <body class="bg-slate-100">
 
   <!-- Navbar -->
-  <header class="text-gray-600 body-font bg-slate-200">
-    <div class="w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 flex-col md:flex-row items-center">
+  <header class="text-gray-600 body-font bg-slate-200 transition-all duration-500" id="header">
+    <div
+      class="w-11/12 md:w-10/12 mx-auto flex flex-wrap py-8 flex-col md:flex-row items-center transition-all duration-500"
+      id="headerContainer">
       <a class="flex title-font font-medium items-center text-slate-700 mb-4 md:mb-0">
         <img src="./assets/zarif.png" class="w-14 h-14 text-white rounded-full" alt="Logo">
         <span class="ml-3 text-xl font-oswald">Zarifprogrammer</span>
@@ -31,7 +33,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="text-gray-600 body-font bg-slate-200">
+  <section class="text-gray-600 body-font bg-slate-200" id="hero">
     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
       <img class="w-24 h-24 rounded-full mb-5" alt="hero" src="./assets/zarif.png">
       <div class="text-center lg:w-2/3 w-full">
@@ -212,6 +214,5 @@
 
 
   <script src="./js/main.js"></script>
-</body>
 
 </html>
