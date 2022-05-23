@@ -4,12 +4,13 @@
     1 - Prepare the elements for animation -> Done
     2 - Grab some elements related to logic -> Done
     3 - We have to use window.scroll to handle the scrolling -> Done
-    4 - Build the logic -> Active
+    4 - Build the logic -> Done
 */
 
 const header = document.getElementById("header"),
   hero = document.getElementById("hero"),
-  headerContainer = document.getElementById("headerContainer");
+  headerContainer = document.getElementById("headerContainer"),
+  logo = document.getElementById("logo");
 
 document.addEventListener("scroll", animateNavbarOnScroll);
 // For Some reasons it was not working, Now it's working;
@@ -22,12 +23,20 @@ function animateNavbarOnScroll() {
     headerContainer.classList.remove("py-8");
     headerContainer.classList.add("py-3");
     header.classList.add("shadow-md");
+    logo.classList.remove("w-14");
+    logo.classList.remove("h-14");
+    logo.classList.add("w-12");
+    logo.classList.add("h-12");
   } else {
     header.classList.remove("sticky");
     header.classList.remove("top-0");
     headerContainer.classList.remove("py-3");
     header.classList.remove("shadow-md");
     headerContainer.classList.add("py-8");
+    logo.classList.remove("w-12");
+    logo.classList.remove("h-12");
+    logo.classList.add("w-14");
+    logo.classList.add("h-14");
   }
 }
 
