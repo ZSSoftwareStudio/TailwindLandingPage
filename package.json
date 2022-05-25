@@ -4,7 +4,8 @@
   "description": "Tailwind CSS Starter Template designed by Zarifprogrammer",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./tailwind.css -o ./css/style.css -w"
+    "build": "tailwindcss -i ./tailwind.css -o ./css/style.css -w",
+    "build-prod": "bash ./build.sh"
   },
   "keywords": [],
   "author": "Zarifprogrammer",
