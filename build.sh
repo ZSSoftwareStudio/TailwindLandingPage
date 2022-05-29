@@ -10,6 +10,8 @@ mkdir dist
 
 cp -R ./index.html ./dist
 echo "Done, Moving index.html"
+cp -R ./404.html ./dist
+echo "Done, Moving 404.html"
 cp -R ./css ./dist/css
 echo "Done, Moving CSS"
 cp -R ./js ./dist/js
