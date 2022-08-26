@@ -5,7 +5,16 @@
     2 - Grab some elements related to logic -> Done
     3 - We have to use window.scroll to handle the scrolling -> Done
     4 - Build the logic -> Done
+
+    5 - Initialize GLightBox for showing intro
 */
+
+const lightBox = GLightbox({
+  href: "https://www.youtube.com/watch?v=S1A2lVdsU2E",
+  type: "video",
+  source: "youtube",
+  width: 900,
+});
 
 const header = document.getElementById("header"),
   hero = document.getElementById("hero"),
